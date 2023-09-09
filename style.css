@@ -12,7 +12,9 @@ body {
   height: 100vh;
   background-color: #fafafa;
 }
-
+ #clear-complated {
+  cursor: pointer;
+}
 .cover {
   position: absolute;
   top: 0;
