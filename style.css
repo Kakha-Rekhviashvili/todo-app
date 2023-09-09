@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40vh;
+  background-image: url("images/bg-mobile-light.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  z-index: 11;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  border: 2px solid black;
+  z-index: 100;
+}
+
+.app_content {
+  width: 327px;
+  margin-top: 100px;
+}
+
+.task-content {
+  display: inline-block;
+}
+
+/* .x {
+  float: right;
+} */
+
+.active {
+  font-size: 25px;
+}
+
+.logo-and-icon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.logo {
+  height: 20px;
+  width: 109px;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+.gloove-border {
+  border-radius: 5px;
+}
+
+.unitbox,
+#bottonList,
+#summary,
+#add-component {
+  width: 100%;
+  height: 47px;
+  background-color: #ffffff;
+  color: #494c6b;
+}
+
+#resultList {
+  overflow: hidden;
+}
+.unitbox {
+  border-bottom: 1px solid #e3e4f1;
+}
+
+.unitbox > *,
+#add-component > * {
+  position: relative; /* Enable absolute positioning */
+  top: 50%; /* Vertically position at 50% of the container height */
+  transform: translateY(-50%);
+}
+
+#add-component {
+  margin-bottom: 18px;
+}
+
+input[type="text"] {
+  all: initial;
+  width: 215px;
+  color: rgba(57, 58, 75, 1);
+  font-family: Josefin Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -0.1666666716337204px;
+}
+
+input[type="checkbox"] {
+  margin: 0 20px;
+}
+
+::placeholder {
+  color: rgba(209, 210, 218, 1); /* Change the text color */
+}
+
+.gadaxazva {
+  text-decoration: line-through;
+  color: rgb(209, 210, 218);
+}
+
+#bottonList {
+  margin-top: 17px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#bottonList > p {
+  display: inline;
+  cursor: pointer;
+}
+
+#summary {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .cover {
+    background-image: url("images/bg-desktop-light.jpg");
+  }
+}

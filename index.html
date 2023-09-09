@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="checkbox.css" />
+    <title>todo-app</title>
+  </head>
+  <body>
+    <div class="cover">
+      <!-- <img src="images/bg-mobile-light.jpg" alt="" /> -->
+    </div>
+    <div class="app">
+      <div class="app_content">
+        <div class="logo-and-icon">
+          <img class="logo" src="images/TODO.png" alt="logo" />
+          <img class="icon" src="images/icon-moon.svg" alt="icon" />
+        </div>
+
+        <div id="add-component" class="gloove-border">
+          <input type="checkbox" id="completed" />
+          <input
+            type="text"
+            name=""
+            id="task"
+            maxlength="40"
+            placeholder="Create a new todo…"
+          />
+        </div>
+        <p id="warningMessage" style="color: red; display: none">Too long!</p>
+
+        <div id="resultList" class="gloove-border"></div>
+        <div id="summary">
+          <p id="items-left">Items leftss 0</p>
+          <p id="clear-complated">Clear complated</p>
+        </div>
+
+        <div id="bottonList" class="gloove-border">
+          <p id="allResults" onclick="allResults()" class="active">All</p>
+          <p id="unCompletedResults" onclick="unCompletedResults()">Active</p>
+          <p id="CompletedResults" onclick="CompletedResults()">completed</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
